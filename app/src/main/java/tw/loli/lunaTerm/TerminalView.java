@@ -1,4 +1,4 @@
-﻿package tw.loli.lunaTerm;
+package tw.loli.lunaTerm;
 
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -154,12 +154,12 @@ public class TerminalView extends View implements VDUDisplay {
 		// I think we have to make a private method for decent measure? 
 		Rect bound = new Rect();
 		defaultPaint.getTextBounds("龜", 0, 1,bound); // I know this is dirty, anyone have a better solution?
-		CHAR_POS_FIX = CHAR_HEIGHT - bound.bottom;		
+		CHAR_POS_FIX = CHAR_HEIGHT - bound.bottom;
 		
 		Paint specialPaint = new Paint(defaultPaint);
 		specialPaint.setTypeface(specialTypeface);
 		specialPaint.getTextBounds("▇", 0, 1,bound);
-		specialDecent = CHAR_HEIGHT - bound.bottom;			
+		specialDecent = CHAR_HEIGHT - bound.bottom;
 		
 		// Draw
 		fullRedraw = true;
@@ -181,9 +181,9 @@ public class TerminalView extends View implements VDUDisplay {
 	/**
 	 * Render magnifier.
 	 * 
-	 * @param canvas
+	 * @param c
 	 * @param drawArea
-	 * @param Focus
+	 * @param focus
 	 */
 	 /* I can't come up with good way to write magnifier.
 	 * So.. just do it the worst say. */

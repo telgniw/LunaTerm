@@ -1,6 +1,16 @@
-/.classpath
-/.project
-/gen
-/bin
-.settings
-Thumbs.db
+.DS_Store
+.*.swp
+
+local.properties
+bin/
+gen/
+
+# Intellij
+.idea/libraries/
+.idea/gradle.xml
+.idea/tasks.xml
+.idea/workspace.xml
+
+# Gradle
+.gradle/
+build/
